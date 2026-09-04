@@ -1,0 +1,201 @@
+[
+  {
+    "key": "group_richport_property_details",
+    "title": "Property Specifications & Financing",
+    "fields": [
+      {
+        "key": "field_prop_ref_num",
+        "label": "Reference ID",
+        "name": "reference_number",
+        "type": "text",
+        "instructions": "Internal reference code (e.g., AR-PUL-0841)",
+        "required": 1
+      },
+      {
+        "key": "field_prop_street",
+        "label": "Street Address",
+        "name": "street_address",
+        "type": "text",
+        "instructions": "Property street address or descriptive location",
+        "required": 1
+      },
+      {
+        "key": "field_prop_city",
+        "label": "City",
+        "name": "city",
+        "type": "text",
+        "required": 1
+      },
+      {
+        "key": "field_prop_zip",
+        "label": "ZIP Code",
+        "name": "zip",
+        "type": "text",
+        "required": 1
+      },
+      {
+        "key": "field_prop_parcel",
+        "label": "County Parcel / APN",
+        "name": "parcel_number",
+        "type": "text",
+        "instructions": "Official county tax assessor parcel number",
+        "required": 1
+      },
+      {
+        "key": "field_prop_cash_price",
+        "label": "Cash Price ($)",
+        "name": "cash_price",
+        "type": "number",
+        "instructions": "Discounted direct cash purchase price",
+        "required": 1
+      },
+      {
+        "key": "field_prop_owner_finance",
+        "label": "Owner Financing Available?",
+        "name": "owner_finance_available",
+        "type": "true_false",
+        "default_value": 1
+      },
+      {
+        "key": "field_prop_down_payment",
+        "label": "Down Payment ($)",
+        "name": "down_payment",
+        "type": "number",
+        "conditional_logic": [
+          [
+            {
+              "field": "field_prop_owner_finance",
+              "operator": "==",
+              "value": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "key": "field_prop_monthly_pmt",
+        "label": "Estimated Monthly P&I ($)",
+        "name": "monthly_payment",
+        "type": "number"
+      },
+      {
+        "key": "field_prop_term_months",
+        "label": "Financing Term (Months)",
+        "name": "term_months",
+        "type": "number",
+        "default_value": 60
+      },
+      {
+        "key": "field_prop_interest_rate",
+        "label": "Interest Rate (%)",
+        "name": "interest_rate",
+        "type": "number",
+        "default_value": 9.9
+      },
+      {
+        "key": "field_prop_acreage",
+        "label": "Acreage",
+        "name": "acreage",
+        "type": "number",
+        "step": "0.01",
+        "required": 1
+      },
+      {
+        "key": "field_prop_bedrooms",
+        "label": "Bedrooms",
+        "name": "bedrooms",
+        "type": "number"
+      },
+      {
+        "key": "field_prop_bathrooms",
+        "label": "Bathrooms",
+        "name": "bathrooms",
+        "type": "number",
+        "step": "0.5"
+      },
+      {
+        "key": "field_prop_sqft",
+        "label": "Square Footage",
+        "name": "sqft",
+        "type": "number"
+      },
+      {
+        "key": "field_prop_year_built",
+        "label": "Year Built",
+        "name": "year_built",
+        "type": "number"
+      },
+      {
+        "key": "field_prop_occupancy",
+        "label": "Occupancy Status",
+        "name": "occupancy",
+        "type": "select",
+        "choices": {
+          "Vacant": "Vacant",
+          "Occupied / Unknown": "Occupied / Unknown",
+          "Unimproved": "Unimproved"
+        }
+      },
+      {
+        "key": "field_prop_repair_level",
+        "label": "Condition Tier",
+        "name": "repair_level",
+        "type": "select",
+        "choices": {
+          "Move-in Ready": "Move-in Ready",
+          "Cosmetic Updates": "Cosmetic Updates",
+          "Moderate Rehab": "Moderate Rehab",
+          "Extensive Rehab / Tear Down": "Extensive Rehab / Tear Down",
+          "Unimproved Raw Land": "Unimproved Raw Land"
+        }
+      },
+      {
+        "key": "field_prop_zoning",
+        "label": "Zoning",
+        "name": "zoning",
+        "type": "text"
+      },
+      {
+        "key": "field_prop_flood_zone",
+        "label": "FEMA Flood Zone",
+        "name": "flood_zone",
+        "type": "text"
+      },
+      {
+        "key": "field_prop_latitude",
+        "label": "Latitude Coordinates",
+        "name": "latitude",
+        "type": "number",
+        "step": "0.000001"
+      },
+      {
+        "key": "field_prop_longitude",
+        "label": "Longitude Coordinates",
+        "name": "longitude",
+        "type": "number",
+        "step": "0.000001"
+      },
+      {
+        "key": "field_prop_title_status",
+        "label": "Title Status",
+        "name": "title_status",
+        "type": "text",
+        "default_value": "Clear Arkansas Tax-Sale Deed / Limited Warranty Deed"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "property"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true
+  }
+]

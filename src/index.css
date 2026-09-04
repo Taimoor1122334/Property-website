@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Prata", Georgia, serif;
+  --font-display: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --color-pine-900: #13281E;
+  --color-pine-800: #1B3B2B;
+  --color-pine-700: #25523D;
+  --color-pine-600: #306B50;
+  --color-gold-600: #997836;
+  --color-gold-500: #B8934E;
+  --color-gold-400: #CBB075;
+  --color-gold-100: #F4EDE0;
+  --color-parchment-50: #FAF8F5;
+  --color-parchment-100: #F4EFEB;
+  --color-parchment-200: #EAE3DC;
+}
+
+/* WordPress Standard Preset Variables & Gutenberg Theme Bridge */
+:root {
+  --wp--preset--color--pine-900: #13281E;
+  --wp--preset--color--pine-800: #153023;
+  --wp--preset--color--pine-700: #1B3B2B;
+  --wp--preset--color--pine-600: #25523D;
+  --wp--preset--color--gold-600: #967433;
+  --wp--preset--color--gold-500: #C29F59;
+  --wp--preset--color--gold-400: #DFC386;
+  --wp--preset--color--parchment-50: #FAF8F5;
+  --wp--preset--color--parchment-100: #FAF7F2;
+  --wp--preset--color--parchment-200: #DECFA9;
+  --wp--preset--color--stone-dark: #292524;
+  --wp--preset--color--white: #FFFFFF;
+
+  --wp--style--global--content-size: 1140px;
+  --wp--style--global--wide-size: 1280px;
+
+  --wp--preset--font-family--serif: "Prata", Georgia, serif;
+  --wp--preset--font-family--display: "Cinzel", Georgia, serif;
+  --wp--preset--font-family--sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--wp--preset--color--parchment-50);
+  color: var(--wp--preset--color--stone-dark);
+}
+
+/* WordPress Standard Layout Classes */
+.wp-site-blocks,
+.site-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.alignwide {
+  max-width: var(--wp--style--global--wide-size);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignfull {
+  width: 100%;
+  max-width: 100%;
+}
+
+.wp-block-group.is-layout-constrained {
+  max-width: var(--wp--style--global--content-size);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+

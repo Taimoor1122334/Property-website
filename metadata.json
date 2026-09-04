@@ -1,0 +1,6 @@
+{
+  "name": "Richport Southern | Arkansas Homes & Land",
+  "description": "Arkansas tax sale properties for cash sale and owner financing. Browse inventory, calculate estimated payments, review property disclosures, and apply online.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

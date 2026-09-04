@@ -1,0 +1,20 @@
+/*
+Theme Name: Richport Southern
+Theme URI: https://richportsouthern.com
+Author: Richport Southern, LLC
+Author URI: https://richportsouthern.com
+Description: Arkansas Real Estate, Land, and Tax-Sale Investment WordPress Theme. Specially tailored for owner financing, direct cash sales, and transparent as-is property disclosures.
+Version: 1.0.0
+Requires at least: 6.2
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: richport-southern
+Tags: real-estate, custom-post-type, acf, block-patterns, full-site-editing, translation-ready
+*/
+
+/* 
+ * Styles are compiled using Tailwind CSS and Gutenberg CSS preset variables.
+ * Refer to theme.json for Full Site Editing definitions.
+ */

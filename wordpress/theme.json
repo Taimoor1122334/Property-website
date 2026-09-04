@@ -1,0 +1,202 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Richport Southern",
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1140px",
+      "wideSize": "1280px"
+    },
+    "color": {
+      "custom": true,
+      "palette": [
+        {
+          "slug": "pine-900",
+          "color": "#13281E",
+          "name": "Pine 900 (Deep Forest)"
+        },
+        {
+          "slug": "pine-800",
+          "color": "#153023",
+          "name": "Pine 800 (Richport Primary)"
+        },
+        {
+          "slug": "pine-700",
+          "color": "#1B3B2B",
+          "name": "Pine 700 (Evergreen)"
+        },
+        {
+          "slug": "pine-600",
+          "color": "#25523D",
+          "name": "Pine 600 (Medium Pine)"
+        },
+        {
+          "slug": "gold-600",
+          "color": "#967433",
+          "name": "Gold 600 (Dark Brass)"
+        },
+        {
+          "slug": "gold-500",
+          "color": "#C29F59",
+          "name": "Gold 500 (Arkansas Gold Accent)"
+        },
+        {
+          "slug": "gold-400",
+          "color": "#DFC386",
+          "name": "Gold 400 (Light Gold)"
+        },
+        {
+          "slug": "parchment-50",
+          "color": "#FAF8F5",
+          "name": "Parchment 50 (App Canvas)"
+        },
+        {
+          "slug": "parchment-100",
+          "color": "#FAF7F2",
+          "name": "Parchment 100 (Card Surface)"
+        },
+        {
+          "slug": "parchment-200",
+          "color": "#DECFA9",
+          "name": "Parchment 200 (Warm Border)"
+        },
+        {
+          "slug": "stone-dark",
+          "color": "#292524",
+          "name": "Stone Dark (Primary Text)"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "White"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Prata\", Georgia, serif",
+          "name": "Prata (Editorial Serif)",
+          "slug": "serif"
+        },
+        {
+          "fontFamily": "\"Cinzel\", Georgia, serif",
+          "name": "Cinzel (Heritage Display)",
+          "slug": "display"
+        },
+        {
+          "fontFamily": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+          "name": "Plus Jakarta Sans (Body Sans)",
+          "slug": "sans"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "Small",
+          "size": "0.75rem",
+          "slug": "small"
+        },
+        {
+          "name": "Medium",
+          "size": "0.875rem",
+          "slug": "medium"
+        },
+        {
+          "name": "Base",
+          "size": "1rem",
+          "slug": "base"
+        },
+        {
+          "name": "Large",
+          "size": "1.25rem",
+          "slug": "large"
+        },
+        {
+          "name": "Extra Large",
+          "size": "1.75rem",
+          "slug": "xl"
+        },
+        {
+          "name": "2X Large",
+          "size": "2.25rem",
+          "slug": "2xl"
+        },
+        {
+          "name": "Hero Title",
+          "size": "3rem",
+          "slug": "3xl"
+        }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "em", "rem", "%"],
+      "spacingScale": {
+        "operator": "*",
+        "increment": 1.5,
+        "steps": 7,
+        "mediumStep": 1.5,
+        "unit": "rem"
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--parchment-50)",
+      "text": "var(--wp--preset--color--stone-dark)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--sans)",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--serif)",
+          "fontWeight": "700"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--pine-800)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--serif)",
+          "fontWeight": "700"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--pine-800)"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--serif)",
+          "fontWeight": "700"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--pine-800)"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--pine-800)"
+        },
+        ":hover": {
+          "color": {
+            "text": "var(--wp--preset--color--gold-600)"
+          }
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var(--wp--preset--color--pine-800)",
+          "text": "var(--wp--preset--color--white)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--sans)",
+          "fontWeight": "700"
+        }
+      }
+    }
+  }
+}
